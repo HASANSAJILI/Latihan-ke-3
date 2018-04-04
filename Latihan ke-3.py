@@ -59,9 +59,9 @@ def nilai_mahasiswa():
     for i in nama:
         idx = nama.index(i)
         x.append([idx+1,nama[idx],nim[idx],nilai_tugas[idx],nilai_uts[idx],nilai_uas[idx],nilai_akhir[idx]])
-        tab.add_rows(x)
-        tab.set_cols_align(['l','l','l','r','r','r','r'])
-        tab.header(['No','Nama','Nim','Nilai Tugas', 'Nilai UTS', 'Nilai UAS','Nilai Akhir'])
+    tab.add_rows(x)
+    tab.set_cols_align(['l','l','l','r','r','r','r'])
+    tab.header(['No','Nama','Nim','Nilai Tugas', 'Nilai UTS', 'Nilai UAS','Nilai Akhir'])
     print (tab.draw())
 
 def pembayaran():
